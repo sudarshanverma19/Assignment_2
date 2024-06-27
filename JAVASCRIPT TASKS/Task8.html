@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f0f9ff, #cbebff, #a6e1ff, #8dd3ff, #79c6ff);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .status {
+            color: red;
+            float: right;
+        }
+        .button {
+            text-align: center;
+        }
+        .button input {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .button input:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label>First Name <span id="firstNameStatus" class="status">POOR</span></label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label>Last Name <span id="lastNameStatus" class="status">POOR</span></label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label>Email <span id="emailStatus" class="status">POOR</span></label>
+            <input type="email" id="email" name="email">
+            
+            <label>Password <span id="passwordStatus" class="status">POOR</span></label>
+            <input type="password" id="password" name="password">
+            
+            <label>Re-enter Password <span id="repasswordStatus" class="status">POOR OR MISMATCH</span></label>
+            <input type="password" id="repassword" name="repassword">
+            
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            
+            <label>Age <span id="ageStatus" class="status">POOR</span></label>
+            <input type="number" id="age" name="age">
+            
+            <label>Phone Number <span id="phoneStatus" class="status">POOR</span></label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label>Address <span id="addressStatus" class="status">POOR</span></label>
+            <textarea id="address" name="address"></textarea>
+            
+            <label>State <span id="stateStatus" class="status">POOR</span></label>
+            <input type="text" id="state" name="state">
+            
+            <label>Country</label>
+            <select id="country" name="country">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="LONDON">LONDON</option>
+                
+            </select>
+            
+            <label>Languages known</label>
+            <input type="checkbox" id="english" name="languages" value="english"> English
+            <input type="checkbox" id="kannada" name="languages" value="kannada"> Kannada
+            <input type="checkbox" id="hindi" name="languages" value="hindi"> Hindi
+            <input type="checkbox" id="telugu" name="languages" value="telugu"> Telugu
+            
+            <label>
+                <input type="checkbox" id="declaration" name="declaration"> Hereby I declare all the given details are true
+            </label>
+            
+            <div class="button">
+                <input type="submit" value="REGISTER">
+            </div>
+        </form>
+    </div>
+    <script src="script8.js"></script>
+</body>
+</html>

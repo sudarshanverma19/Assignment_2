@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #train {
+            position: relative;
+            animation: moveTrain 5s linear infinite;
+        }
+
+        @keyframes moveTrain {
+            0% { left: 0; }
+            100% { left: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <img id="train" src="train.png.png" alt="Train Animation" width="200">
+    <div>
+        <button onclick="startAnimation()">Start</button>
+        <button onclick="stopAnimation()">Stop</button>
+    </div>
+
+    <script>
+        function startAnimation() {
+            document.getElementById('train').style.animationPlayState = 'running';
+        }
+
+        function stopAnimation() {
+            document.getElementById('train').style.animationPlayState = 'paused';
+        }
+    </script>
+</body>
+</html>
